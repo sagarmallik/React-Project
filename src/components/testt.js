@@ -2,6 +2,9 @@ import React from 'react'
 
 export default function testt() {
   return (
-    <div>testt</div>
+    <div>
+      <h1>Ready</h1>
+    </div>
+    
   )
 }
