@@ -4,6 +4,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import Navbar from "./components/Navbar";
+import TextForm from "./components/TextForm";
 
 // var a = 10;
 function App() {
@@ -36,6 +37,8 @@ function App() {
     {/* Navabar Component Here ========================> */}
     
     <Navbar/>
+    <br></br>
+    <TextForm heading = "Enter text here :" />
 
 
 
