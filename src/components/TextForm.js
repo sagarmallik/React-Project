@@ -14,6 +14,10 @@ export default function TextForm(props) {
             <button onClick={ConvertToLowerCase} type="submit" className="btn btn-primary">Lower Case</button>
             &nbsp;
             <button className='btn btn-primary' onClick={Cleartext}  >Clear Text</button>
+            &nbsp;
+            <button className='btn btn-primary' onClick={Copytext}  >Copy Text</button>
+            &nbsp;
+            <button className='btn btn-primary' onClick={RemoveExtraSpace}  >Remove Space</button>
 
             <h4>Your Text Summery</h4>
             <p>{text.split(" ").length} words {text.length} characters</p> 
@@ -26,6 +30,16 @@ export default function TextForm(props) {
     </div>
 
   )
+
+
+  function Copytext(){
+    navigator.clipboard.writeText(text);
+  }
+
+  function RemoveExtraSpace(){
+    setText(text.replace(/\s\s+/g, ' '));
+    
+  }
 
   function ClickToErase(event){
 

@@ -3,6 +3,7 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+import About from "./components/About";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 
@@ -39,6 +40,10 @@ function App() {
     <Navbar/>
     <br></br>
     <TextForm heading = "Enter text here :" />
+
+    <div className="container">
+      <About />
+    </div>
 
 
 
